@@ -1,0 +1,32 @@
+<template>
+	<h1>Calculadora LWC</h1>
+	<div id="cac">
+		<div id="numeros1">
+			<lightning-input type="number" label="Insira aqui o primeiro número: " onchange={mudouN1}></lightning-input>
+		</div>
+		<div id='numeros2'>
+			<lightning-input type="number" label="Insira aqui o primeiro número: " onchange={mudouN2}></lightning-input>
+
+		</div><br/>
+
+		<div id="ope">
+			<lightning-button variant="brand-outline" label="+" onclick={soma} class="slds-m-left_x-small">
+			</lightning-button>
+			<lightning-button variant="brand-outline" label="-" onclick={sub} class="slds-m-left_x-small">
+			</lightning-button>
+			<lightning-button variant="brand-outline" label="/" onclick={div} class="slds-m-left_x-small">
+			</lightning-button>
+			<lightning-button variant="brand-outline" label="*" onclick={mult} class="slds-m-left_x-small">
+			</lightning-button>
+			<lightning-button variant="brand-outline" label="limpar" onclick={limpar} class="slds-m-left_x-small ">
+			</lightning-button>
+
+
+		</div>
+
+	</div><br/>
+	<h2 class="fontes1" id="resu">{resultado}</h2>
+
+
+
+</template>
